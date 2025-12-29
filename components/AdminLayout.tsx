@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Outlet, NavLink, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, Users, Calendar, DollarSign, Columns, RefreshCw, LogOut, FileText, Utensils } from 'lucide-react';
+import { LayoutDashboard, Users, Calendar, DollarSign, Columns, RefreshCw, LogOut, FileText, Calculator } from 'lucide-react';
 
 interface AdminLayoutProps {
   onLogout: () => void;
@@ -32,6 +32,9 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ onLogout }) => {
           </NavLink>
           <NavLink to="/admin/schedule" className={({ isActive }) => `flex items-center gap-3 px-5 py-3.5 rounded-2xl transition-all font-semibold ${isActive ? 'bg-rose-400 text-white shadow-lg shadow-rose-900/40' : 'text-slate-400 hover:bg-white/5 hover:text-white'}`}>
             <Calendar size={20} /> Agenda
+          </NavLink>
+          <NavLink to="/admin/calculators" className={({ isActive }) => `flex items-center gap-3 px-5 py-3.5 rounded-2xl transition-all font-semibold ${isActive ? 'bg-rose-400 text-white shadow-lg shadow-rose-900/40' : 'text-slate-400 hover:bg-white/5 hover:text-white'}`}>
+            <Calculator size={20} /> Calculadoras
           </NavLink>
           <NavLink to="/admin/reports" className={({ isActive }) => `flex items-center gap-3 px-5 py-3.5 rounded-2xl transition-all font-semibold ${isActive ? 'bg-rose-400 text-white shadow-lg shadow-rose-900/40' : 'text-slate-400 hover:bg-white/5 hover:text-white'}`}>
             <FileText size={20} /> Prontuário

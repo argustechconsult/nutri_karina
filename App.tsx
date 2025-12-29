@@ -11,6 +11,7 @@ import FinancialManagement from './components/FinancialManagement';
 import KanbanBoard from './components/KanbanBoard';
 import RetentionTool from './components/RetentionTool';
 import SessionReportManagement from './components/SessionReportManagement';
+import NutritionalCalculators from './components/NutritionalCalculators';
 import { Client, Appointment, FinancialRecord, KanbanTask, SessionReport, GlobalSettings } from './types';
 
 const App: React.FC = () => {
@@ -115,6 +116,7 @@ const App: React.FC = () => {
             <Route index element={<AdminDashboard clients={clients} appointments={appointments} finances={finances} />} />
             <Route path="clients" element={<ClientManagement clients={clients} setClients={setClients} />} />
             <Route path="schedule" element={<ScheduleManagement appointments={appointments} setAppointments={setAppointments} clients={clients} setFinances={setFinances} settings={settings} setSettings={setSettings} />} />
+            <Route path="calculators" element={<NutritionalCalculators />} />
             <Route path="reports" element={<SessionReportManagement appointments={appointments} clients={clients} reports={sessionReports} setReports={setSessionReports} />} />
             <Route path="finance" element={<FinancialManagement finances={finances} setFinances={setFinances} />} />
             <Route path="kanban" element={<KanbanBoard tasks={kanbanTasks} setTasks={setKanbanTasks} />} />

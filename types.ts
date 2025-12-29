@@ -31,11 +31,16 @@ export interface SessionReport {
   id: string;
   appointmentId: string;
   clientId: string;
-  content: string;
   date: string;
+  content: string;
   observations: string;
   evolution: string;
   conduct: string;
+  // Campos novos de Nutrição
+  healthHistory: string;
+  eatingHabits: string;
+  anthropometrics: string;
+  patientGoals: string;
 }
 
 export interface FinancialRecord {
@@ -63,5 +68,6 @@ export enum AppRoute {
   ADMIN_FINANCE = '/admin/finance',
   ADMIN_KANBAN = '/admin/kanban',
   ADMIN_RETENTION = '/admin/retention',
-  ADMIN_REPORTS = '/admin/reports'
+  ADMIN_REPORTS = '/admin/reports',
+  ADMIN_CALCULATORS = '/admin/calculators'
 }
