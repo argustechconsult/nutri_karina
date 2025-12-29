@@ -1,0 +1,8 @@
+{
+  "name": "Karina_Nutri",
+  "description": "Landing page profissional e painel de gestão para Karina, Nutricionista Clínica e Comportamental. Inclui gestão de pacientes, agenda, financeiro e retenção via IA.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
