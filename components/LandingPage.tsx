@@ -448,9 +448,24 @@ const LandingPage: React.FC<LandingPageProps> = ({
             <Mail size={20} className="hover:text-rose-300 cursor-pointer" />
             <Phone size={20} className="hover:text-rose-300 cursor-pointer" />
           </div>
-          <p className="text-slate-500 text-sm">
-            © 2024 Nutri Karina - Saúde e Bem-estar.
+          <div className="pt-1 mt-6 md:mt-12 text-center">
+          <p className="text-white text-[10px] uppercase tracking-widest">
+            © {new Date().getFullYear()} Karina Rodrigues. Todos os direitos
+            reservados.
           </p>
+          <a
+            href="https://argustech.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-sm text-white hover:text-neutral-300 transition-colors py-2"
+          >
+            Produzido por
+            <span className="font-bold text-white">Argus</span>
+            <span className="font-bold" style={{ color: '#0000FF' }}>
+              Tech
+            </span>
+          </a>
+        </div>
         </div>
       </footer>
 

@@ -137,7 +137,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ onLogout }) => {
               }`
             }
           >
-            <Columns size={20} /> Processos
+            <Columns size={20} /> tarefas
           </NavLink>
           <NavLink
             to="/admin/finance"
@@ -151,19 +151,6 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ onLogout }) => {
             }
           >
             <DollarSign size={20} /> Financeiro
-          </NavLink>
-          <NavLink
-            to="/admin/retention"
-            onClick={() => setIsSidebarOpen(false)}
-            className={({ isActive }) =>
-              `flex items-center gap-3 px-5 py-3.5 rounded-2xl transition-all font-semibold ${
-                isActive
-                  ? 'bg-rose-400 text-white shadow-lg shadow-rose-900/40'
-                  : 'text-slate-400 hover:bg-white/5 hover:text-white'
-              }`
-            }
-          >
-            <RefreshCw size={20} /> Retenção
           </NavLink>
         </nav>
 

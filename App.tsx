@@ -248,10 +248,6 @@ const App: React.FC = () => {
                 <KanbanBoard tasks={kanbanTasks} setTasks={setKanbanTasks} />
               }
             />
-            <Route
-              path="retention"
-              element={<RetentionTool clients={clients} />}
-            />
           </Route>
         ) : (
           <Route path="/admin/*" element={<Navigate to="/login" replace />} />
